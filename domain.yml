@@ -1,0 +1,120 @@
+version: "3.1"
+
+intents:
+  - greet_friendly
+  - greet_formal
+  - greet_neutral
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+
+responses:  
+  utter_greet_friendly:  
+    - text:  
+        "Hey buddy! I'm here for you. What's up?"  
+    - text:  
+        "Yo! Let's talk, I've got your back."   
+    - text:  
+        "Hey there, my friend! I'm all ears, what's going on?"  
+    - text:  
+        "Yo! Let's chat. I'm here to support you."  
+    - text:  
+        "Hey buddy! Whatever's on your mind, I'm here to help."  
+    - text:  
+        "Hi there, pal! How can is it going?"
+    - text:  
+        "What's up, mate? I've got your back—tell me what's on your mind."  
+    - text:  
+        "Hey there! Let's talk, I'm here for anything you need." 
+    - text:  
+        "Yo! Let's talk—whatever's on your mind, I'm all ears."  
+    - text:  
+        "Sup, mate? I'm here for you , what's going on?"
+     
+  utter_greet_formal:   
+    - text:  
+        "Hello, I'm here to help. Please let me know how I can support you."
+    - text:  
+        "Hello, it's great to hear from you. How can I support you today?" 
+    - text:  
+        "Hi there! I'm here to listen and help. What's on your mind?"  
+    - text:  
+        "Hello, I hope everything's going well. How can I help you today?"  
+    - text:  
+        "It's nice to connect with you. Please share anything you'd like to talk about."   
+    - text:  
+        "Hi there, I'm ready to help you with anything you need."
+    - text:  
+        "Hello, it's great to hear from you. How can I assist you today?"  
+    - text:  
+        "Good day! I'm here to help. Please let me know what's on your mind."  
+    - text:  
+        "Hi there! I'm here to support you in any way I can."  
+    - text:  
+        "Hello, I hope you're doing well. How can I assist you?"  
+    - text:  
+        "It's nice to connect with you. Let me know how I can help."
+
+  utter_greet_neutral:  
+    - text:  
+        "Hi there! How are you feeling today?"  
+    - text:  
+        "Hello! I'm here to listen. What's on your mind?"  
+    - text:  
+        "Hi there! How are you feeling today?"  
+    - text:  
+        "Hello! I'm here to listen—what's on your mind?"  
+    - text:  
+        "Hey! Let's chat. How can I support you today?"  
+    - text:  
+        "Hi! I'm here to help you with anything you need."
+    - text:  
+        "Hi there! I'm here to listen and help in any way I can. What's on your mind?"  
+    - text:  
+        "Hey! It's so nice to connect with you. How can I assist you today?"  
+    - text:  
+        "Hello! You're in a safe space here. How can I help you feel better?"  
+    - text:  
+        "Hi! I'm here for you. Please share anything you'd like to talk about."
+    - text:  
+        "Hello! It's wonderful to connect with you. I'm here to support you in any way I can."  
+    - text:  
+        "Hi there! Please know this is a safe space, and I'm here to listen to whatever's on your mind."  
+    - text:  
+        "Good to see you! How can I assist you today? You're not alone, and I'm here to help."  
+    - text:  
+        "Hi! I'm here to help you feel more at ease. Please share what's on your mind."  
+    - text:  
+        "Hey there! You've taken an important step by reaching out. How can I support you?"  
+    - text:  
+        "Hello! It's great to hear from you. How can I make things easier for you today?"  
+    - text:  
+        "Hi! I'm here for you. Please feel free to share whatever's on your mind, big or small."  
+    - text:  
+        "Hello! Take a deep breath—you're in a safe place. How can I assist you today?"  
+    - text:  
+        "Hi there! I'm here to listen, understand, and help. How can I support you today?"
+
+
+  # utter_cheer_up:
+  # - text: "Here is something to cheer you up:"
+  #   image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  # utter_did_that_help:
+  # - text: "Did that help you?"
+
+  # utter_happy:
+  # - text: "Great, carry on!"
+
+  # utter_goodbye:
+  # - text: "Bye"
+
+  # utter_iamabot:
+  # - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,158 @@
+
+version: "3.1"
+
+nlu:
+
+- intent: greet_friendly  
+  examples: |  
+    - hey buddy  
+    - sup bro  
+    - yo!  
+    - hey dude  
+    - hi there, pal  
+    - what's up?  
+    - hey mate  
+    - yo, you there
+    - hey, my friend
+    - sup  
+    - hiya  
+    - hey bro  
+    - hey man  
+    - how's it going?  
+    - what's good
+    - hey, buddy
+    - hey, friend
+    - hey, pal
+    - what's up, buddy
+    - hey, you there
+    - yo, what's cookin'?  
+    - heyo!  
+    - hey, sup my bot?  
+    - yo, long time no see!  
+    - hiya! Let's vibe.   
+    - sup, ready to chat?
+ 
+- intent: greet_formal  
+  examples: |  
+    - good morning  
+    - good afternoon  
+    - good evening  
+    - I hope you're doing well  
+    - greetings  
+    - good day  
+    - hello, can we talk  
+    - nice to meet you  
+    - I'd like to speak with you  
+    - hello, are you available 
+    - hi, I'd like some support  
+    - may I speak with you?  
+    - hi, I need assistance
+    - hello, I have a question
+    - hi, I need help
+    - hello, I'd like to talk
+    - hi, I need some information
+    - hello, I have a problem
+    - hi, I need some advice
+    - hello, I'd like to discuss
+    - hi, I need some guidance
+    - hello, I have a concern
+    - hello, I'd like to ask
+    - hi, I need some feedback
+
+- intent: greet_neutral  
+  examples: |  
+    - hello  
+    - hi  
+    - hey  
+    - hi there  
+    - hello there  
+    - good to see you  
+    - nice to meet you  
+    - hi, how are you?  
+    - hello, what's up?  
+    - hi, I'm here  
+    - hey, let's chat
+    - let's chat
+    - good to see you 
+    - moin
+    - morning
+
+
+
+
+
+# - intent: goodbye
+#   examples: |
+#     - cu
+#     - good by
+#     - ni8
+#     - cee you later
+#     - good night
+#     - bye
+#     - goodbye
+#     - have a nice day
+#     - see you around
+#     - bye bye
+#     - see you later
+
+# - intent: affirm
+#   examples: |
+#     - yes
+#     - y
+#     - indeed
+#     - of course
+#     - that sounds good
+#     - correct
+
+# - intent: deny
+#   examples: |
+#     - no
+#     - n
+#     - never
+#     - I don't think so
+#     - don't like that
+#     - no way
+#     - not really
+
+# - intent: mood_great
+#   examples: |
+#     - perfect
+#     - great
+#     - amazing
+#     - feeling like a king
+#     - wonderful
+#     - I am feeling very good
+#     - I am great
+#     - I am amazing
+#     - I am going to save the world
+#     - super stoked
+#     - extremely good
+#     - so so perfect
+#     - so good
+#     - so perfect
+
+# - intent: mood_unhappy
+#   examples: |
+#     - my day was horrible
+#     - I am sad
+#     - I don't feel very well
+#     - I am disappointed
+#     - super sad
+#     - I'm so sad
+#     - sad
+#     - very sad
+#     - unhappy
+#     - not good
+#     - not very good
+#     - extremly sad
+#     - so saad
+#     - so sad
+
+# - intent: bot_challenge
+#   examples: |
+#     - are you a bot?
+#     - are you a human?
+#     - am I talking to a bot?
+#     - am I talking to a human?
+
+
