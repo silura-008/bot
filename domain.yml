@@ -3,7 +3,6 @@ version: "3.1"
 intents:
   - greet_friendly
   - greet_formal
-  - greet_neutral
   - goodbye
   - affirm
   - deny
@@ -33,42 +32,10 @@ responses:
         "Yo! Let's talk—whatever's on your mind, I'm all ears."  
     - text:  
         "Sup, mate? I'm here for you , what's going on?"
-     
-  utter_greet_formal:   
-    - text:  
-        "Hello, I'm here to help. Please let me know how I can support you."
-    - text:  
-        "Hello, it's great to hear from you. How can I support you today?" 
-    - text:  
-        "Hi there! I'm here to listen and help. What's on your mind?"  
-    - text:  
-        "Hello, I hope everything's going well. How can I help you today?"  
-    - text:  
-        "It's nice to connect with you. Please share anything you'd like to talk about."   
-    - text:  
-        "Hi there, I'm ready to help you with anything you need."
-    - text:  
-        "Hello, it's great to hear from you. How can I assist you today?"  
-    - text:  
-        "Good day! I'm here to help. Please let me know what's on your mind."  
-    - text:  
-        "Hi there! I'm here to support you in any way I can."  
-    - text:  
-        "Hello, I hope you're doing well. How can I assist you?"  
-    - text:  
-        "It's nice to connect with you. Let me know how I can help."
 
-  utter_greet_neutral:  
+  utter_greet_formal:  
     - text:  
-        "Hi there! How are you feeling today?"  
-    - text:  
-        "Hello! I'm here to listen. What's on your mind?"  
-    - text:  
-        "Hi there! How are you feeling today?"  
-    - text:  
-        "Hello! I'm here to listen—what's on your mind?"  
-    - text:  
-        "Hey! Let's chat. How can I support you today?"  
+        "Hello! I'm here to listen, what's on your mind?"
     - text:  
         "Hi! I'm here to help you with anything you need."
     - text:  
@@ -94,9 +61,35 @@ responses:
     - text:  
         "Hi! I'm here for you. Please feel free to share whatever's on your mind, big or small."  
     - text:  
-        "Hello! Take a deep breath—you're in a safe place. How can I assist you today?"  
-    - text:  
         "Hi there! I'm here to listen, understand, and help. How can I support you today?"
+  
+  utter_self_harm:  
+    - text:  
+        "I'm so sorry you're feeling this way. You're not alone, and there are people who care about you and want to help."  
+    - text:  
+        "It's okay to feel overwhelmed sometimes. Please know that hurting yourself won't solve the pain. Let's think about how we can get you support."  
+    - text:  
+        "I can only imagine how hard this must be for you. Please consider reaching out to a trusted friend, family member, or a mental health professional."  
+    - text:  
+        "Your feelings are valid, and I'm here to help you through this. Can I help you find someone to talk to, like a counselor or a support line?"  
+    - text:  
+        "I'm so sorry you're feeling this way. Please reach out to a mental health professional or a helpline—they can provide the care and support you deserve."
+  
+  utter_violence:  
+    - text:  
+        "I can sense how strong your feelings are right now. It's okay to feel anger, but let's find a safe way to express it."  
+    - text:  
+        "I hear you—it's really tough to deal with such intense emotions. Try to pause and take a few deep breaths. You've got this."  
+    - text:  
+        "It's okay to feel angry, but hurting yourself or others won't solve the problem. Let's talk about what's bothering you and how we can manage it."  
+    - text:  
+        "I can tell you're feeling very upset. Would you like to try a calming exercise with me, like slow breathing or counting down?"  
+    - text:  
+        "Anger can feel overwhelming, but it's important to stay safe. Can I help you find someone to talk to, like a therapist or counselor?"
+
+
+
+
 
 
   # utter_cheer_up:

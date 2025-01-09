@@ -12,10 +12,6 @@ stories:
       - intent: greet_formal  
       - action: utter_greet_formal  
 
-  - story: Neutral greeting  
-    steps:  
-      - intent: greet_neutral  
-      - action: utter_greet_neutral
 
 
 # - story: happy path
