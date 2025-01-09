@@ -104,44 +104,44 @@ nlu:
     - thanks for your help 
 
 - intent: bye  
-    examples: |  
-      - bye  
-      - goodbye  
-      - see you later  
-      - take care  
-      - talk to you soon  
-      - catch you later  
-      - bye for now  
-      - see you  
-      - thanks, bye  
-      - I'll talk to you later  
-      - goodbye for now  
-      - later  
-      - peace out
-      - cu
-      - good by
-      - ni8
-      - cee you later
-      - good night
-      - bye
-      - goodbye
-      - have a nice day
-      - see you around
-      - bye bye
-      - see you later 
-      - later, buddy  
-      - peace out  
-      - see you, pal  
-      - bye, mate  
-      - talk soon, friend  
-      - see you later, buddy  
-      - take care, pal
-      - farewell  
-      - I wish you well  
-      - thank you and goodbye  
-      - see you next time  
-      - talk to you soon 
-      - see you
+  examples: |  
+    - bye  
+    - goodbye  
+    - see you later  
+    - take care  
+    - talk to you soon  
+    - catch you later  
+    - bye for now  
+    - see you  
+    - thanks, bye  
+    - I'll talk to you later  
+    - goodbye for now  
+    - later  
+    - peace out
+    - cu
+    - good by
+    - ni8
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later 
+    - later, buddy  
+    - peace out  
+    - see you, pal  
+    - bye, mate  
+    - talk soon, friend  
+    - see you later, buddy  
+    - take care, pal
+    - farewell  
+    - I wish you well  
+    - thank you and goodbye  
+    - see you next time  
+    - talk to you soon 
+    - see you
 
 
 

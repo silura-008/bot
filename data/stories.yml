@@ -1,74 +1,47 @@
 version: "3.1"
 
 stories:
- 
-  - story: Friendly greeting  
-    steps:  
-      - intent: greet_friendly  
-      - action: utter_greet_friendly  
+  - story: Friendly greeting
+    steps:
+      - intent: greet_friendly
+      - action: action_set_tone
+      - slot_was_set:
+          - tone: friendly
+      - action: utter_greet_friendly
 
-  - story: Formal greeting  
-    steps:  
-      - intent: greet_formal  
-      - action: utter_greet_formal  
-
+  - story: Formal greeting
+    steps:
+      - intent: greet_formal
+      - action: action_set_tone
+      - slot_was_set:
+          - tone: formal
+      - action: utter_greet_formal
 
   - story: Respond to thanks friendly
     steps:
       - intent: thanks
-        conditions:
-          - slot: tone
-            value: friendly
+      - slot_was_set:
+          - tone: friendly
       - action: utter_thanks_friendly
 
   - story: Respond to thanks formally
     steps:
       - intent: thanks
-        conditions:
-          - slot: tone
-            value: formal
+      - slot_was_set:
+          - tone: formal
       - action: utter_thanks_formal
 
   - story: Respond to bye friendly
     steps:
       - intent: bye
-        conditions:
-          - slot: tone
-            value: friendly
+      - slot_was_set:
+          - tone: friendly
       - action: utter_bye_friendly
 
   - story: Respond to bye formally
     steps:
       - intent: bye
-        conditions:
-          - slot: tone
-            value: formal
+      - slot_was_set:
+          - tone: formal
       - action: utter_bye_formal
 
-
-# - story: happy path
-#   steps:
-#   - intent: greet
-#   - action: utter_greet
-#   - intent: mood_great
-#   - action: utter_happy
-
-# - story: sad path 1
-#   steps:
-#   - intent: greet
-#   - action: utter_greet
-#   - intent: mood_unhappy
-#   - action: utter_cheer_up
-#   - action: utter_did_that_help
-#   - intent: affirm
-#   - action: utter_happy
-
-# - story: sad path 2
-#   steps:
-#   - intent: greet
-#   - action: utter_greet
-#   - intent: mood_unhappy
-#   - action: utter_cheer_up
-#   - action: utter_did_that_help
-#   - intent: deny
-#   - action: utter_goodbye

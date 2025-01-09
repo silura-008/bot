@@ -5,11 +5,11 @@ intents:
   - greet_formal
   - bye
   - thanks
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
+#   - affirm
+#   - deny
+#   - mood_great
+#   - mood_unhappy
+#   - bot_challenge
 
 responses:  
 
@@ -25,7 +25,7 @@ responses:
     - text:  
         "Hey buddy! Whatever's on your mind, I'm here to help."  
     - text:  
-        "Hi there, pal! How can is it going?"
+        "Hi there, pal! How is it going?"
     - text:  
         "What's up, mate? I've got your back—tell me what's on your mind."  
     - text:  
@@ -180,8 +180,17 @@ responses:
 
 slots:
   tone:
-    type: text
+    type: categorical
+    values:
+        - friendly
+        - formal   
+    mappings:
+        - type: custom
+    initial_value: formal
     influence_conversation: true
+
+actions:
+    - action_set_tone
 
 session_config:
   session_expiration_time: 60
