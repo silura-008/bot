@@ -13,6 +13,8 @@ intents:
 
 responses:  
 
+# greet/bye/thanks
+
   utter_greet_friendly:  
     - text:  
         "Hey buddy! I'm here for you. What's up?"  
@@ -129,6 +131,52 @@ responses:
     - text:  
         "Later, friend! Let me know if you need anything."
 
+# happy (elaborate/comfort)
+
+  utter_elaborate_happy_joy:
+    - text: "Sounds like something amazing happened. Care to tell me more?"
+    - text: "It's so lovely to see your excitement. Would you like to tell me more about it?"
+    -  text: "You seem really happy! What's been going on?"
+    -  text: "That's wonderful to hear! What's been bringing you so much joy?"
+    -  text: "You seem happy—that's wonderful. Want to tell me more about what's going on?"
+
+  utter_comfort_happy_joy:
+    - text: "That sounds so wonderful! Moments like these are what make life truly beautiful. Savor it, and remember, happiness deserves to be celebrated."
+    - text: "That's so wonderful to hear! I'm glad you're having such a good moment."
+    - text: "It's so lovely to see you this happy. These moments remind us to cherish life's little blessings."
+
+  utter_elaborate_happy_sorrow:
+    - text: "You sound happy, and that's so wonderful to hear! I'd love to know more."
+    - text: "Hearing your happiness is heartwarming. Tell me about what's brought this joy to you"
+    - text: "It's so nice to hear you're feeling good! What's going on?"
+
+  utter_comfort_happy_sorrow:
+    - text: "Your happiness is so well-deserved. It's great to see you enjoying this moment—let's hold onto this feeling for as long as we can."
+    - text: "See, life is not always cloudy,there would be a sunshine! remember better days ahead,and enjoy your momment"
+    - text: "This happiness you're feeling is a reminder of how strong you are. Even after tough times, you've found this joy, and that's amazing."
+    - text: "Happiness looks good on you. Keep enjoying it!"
+
+  utter_elaborate_happy_fury/nervous:
+    - text: "You seem happy—that's so great to hear! What's been making you feel this way?"
+    - text: "This positive feeling, its happiness! what's going on"
+    - text: "It's so nice to hear you're feeling good! What's going on?"
+
+  utter_comfort_happy_fury:
+    - text: "Happiness looks good on you. Keep enjoying it!"
+    - text: "I'm so glad to hear you're happy. Joy can be a strong force to balance life's challenges—keep celebrating it!"
+    - text: "Seeing you happy is inspiring. It's a great reminder of how powerful positive emotions can be."
+
+  utter_comfort_happy_nervous:
+    - text: "Happiness may feel a bit conflicting or overwhelming, but it's okay to experience it that way. Let's focus on the joy in this moment."
+    - text: "Your happiness is so well-deserved. It's great to see you enjoying this moment—let's hold onto this feeling for as long as we can."
+    - text: "Happiness looks good on you. Keep enjoying it!"
+
+# sad (elaborate/comfort)
+
+
+
+
+
 
 
 
@@ -177,6 +225,14 @@ responses:
 
   # utter_iamabot:
   # - text: "I am a bot, powered by Rasa."
+
+
+
+
+
+
+
+
 
 slots:
   tone:
