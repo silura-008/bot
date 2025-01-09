@@ -74,7 +74,82 @@ nlu:
     - moin
     - morning
 
- 
+- intent: thanks  
+  examples: |  
+    - thank you  
+    - thanks  
+    - I appreciate it  
+    - much appreciated  
+    - thanks for your help  
+    - thank you so much  
+    - I'm grateful  
+    - I appreciate your support  
+    - cheers  
+    - thank you, that helps  
+    - thanks for being here  
+    - thanks a ton 
+    - thanks a lot, buddy
+    - appreciate it, pal  
+    - thanks, mate  
+    - thanks a ton, friend  
+    - you rock, thanks!  
+    - couldn't have done it without you 
+    - many thanks  
+    - thank you kindly  
+    - thanks a lot for your help  
+    - I'm grateful for your assistance  
+    - I sincerely thank you
+    - thanks a lot  
+    - thank you very much  
+    - thanks for your help 
+
+- intent: bye  
+    examples: |  
+      - bye  
+      - goodbye  
+      - see you later  
+      - take care  
+      - talk to you soon  
+      - catch you later  
+      - bye for now  
+      - see you  
+      - thanks, bye  
+      - I'll talk to you later  
+      - goodbye for now  
+      - later  
+      - peace out
+      - cu
+      - good by
+      - ni8
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later 
+      - later, buddy  
+      - peace out  
+      - see you, pal  
+      - bye, mate  
+      - talk soon, friend  
+      - see you later, buddy  
+      - take care, pal
+      - farewell  
+      - I wish you well  
+      - thank you and goodbye  
+      - see you next time  
+      - talk to you soon 
+      - see you
+
+
+
+
+
+
+
+
 - intent: self_harm  
   examples: |  
     - I feel like hurting myself  
@@ -100,20 +175,6 @@ nlu:
     - I want to hurt someone  
     - I can't stop these violent thoughts  
     - I feel like punching a wall
-
-# - intent: goodbye
-#   examples: |
-#     - cu
-#     - good by
-#     - ni8
-#     - cee you later
-#     - good night
-#     - bye
-#     - goodbye
-#     - have a nice day
-#     - see you around
-#     - bye bye
-#     - see you later
 
 # - intent: affirm
 #   examples: |

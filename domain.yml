@@ -3,7 +3,8 @@ version: "3.1"
 intents:
   - greet_friendly
   - greet_formal
-  - goodbye
+  - bye
+  - thanks
   - affirm
   - deny
   - mood_great
@@ -11,6 +12,7 @@ intents:
   - bot_challenge
 
 responses:  
+
   utter_greet_friendly:  
     - text:  
         "Hey buddy! I'm here for you. What's up?"  
@@ -62,7 +64,75 @@ responses:
         "Hi! I'm here for you. Please feel free to share whatever's on your mind, big or small."  
     - text:  
         "Hi there! I'm here to listen, understand, and help. How can I support you today?"
-  
+     
+  utter_thanks_formal:  
+    - text:  
+        "You're most welcome. I'm glad I could assist you."  
+    - text:  
+        "I appreciate your kind words. Please don't hesitate to reach out again."  
+    - text:  
+        "Thank you! It's my pleasure to be here for you."  
+    - text:  
+        "You're very welcome. Wishing you all the best."  
+    - text:  
+        "You're very welcome. I'm here whenever you need me."  
+    - text:  
+        "No problem at all. I'm glad I could help."  
+    - text:  
+        "I appreciate you saying that. Remember, I'm always here to support you."  
+    - text:  
+        "You're welcome! Please don't hesitate to reach out again."  
+    - text:  
+        "I'm here for you anytime. Take care of yourself!"  
+    - text:  
+        "Thank you! It means a lot to me that I could help you today."
+   
+  utter_bye_formal:  
+    - text:  
+        "Goodbye! Please take care of yourself, and I'm here whenever you need me."  
+    - text:  
+        "Farewell. Wishing you all the best until we speak again."  
+    - text:  
+        "Take care. It's always a pleasure to assist you."  
+    - text:  
+        "Goodbye for now. I'm always here to support you." 
+    - text:  
+        "Take care of yourself, and I'll be here if you need me again."  
+    - text:  
+        "Goodbye for now. Remember, I'm always here whenever you want to talk."  
+    - text:  
+        "See you later! Take care and have a great day ahead."  
+    - text:  
+        "Bye! Reach out anytime you need support."  
+    - text:  
+        "Goodbye! You're doing great—keep it up, and I'm here whenever you need me."  
+    - text:  
+        "Take care! Don't hesitate to come back if you want to chat again."
+ 
+  utter_thanks_friendly:  
+    - text:  
+        "You're welcome, buddy! I'm always here for you."  
+    - text:  
+        "No worries, mate! Glad I could help."  
+    - text:  
+        "Anytime, pal! You've got this!"  
+    - text:  
+        "You're the best! Let me know if you ever need anything."
+
+  utter_bye_friendly:  
+    - text:  
+        "Catch you later, buddy! Take care."  
+    - text:  
+        "Peace out, pal! I'm always here for you."  
+    - text:  
+        "See you later, mate! Stay awesome."  
+    - text:  
+        "Later, friend! Let me know if you need anything."
+
+
+
+
+
   utter_self_harm:  
     - text:  
         "I'm so sorry you're feeling this way. You're not alone, and there are people who care about you and want to help."  
@@ -107,6 +177,11 @@ responses:
 
   # utter_iamabot:
   # - text: "I am a bot, powered by Rasa."
+
+slots:
+  tone:
+    type: text
+    influence_conversation: true
 
 session_config:
   session_expiration_time: 60

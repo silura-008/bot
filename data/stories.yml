@@ -13,6 +13,38 @@ stories:
       - action: utter_greet_formal  
 
 
+  - story: Respond to thanks friendly
+    steps:
+      - intent: thanks
+        conditions:
+          - slot: tone
+            value: friendly
+      - action: utter_thanks_friendly
+
+  - story: Respond to thanks formally
+    steps:
+      - intent: thanks
+        conditions:
+          - slot: tone
+            value: formal
+      - action: utter_thanks_formal
+
+  - story: Respond to bye friendly
+    steps:
+      - intent: bye
+        conditions:
+          - slot: tone
+            value: friendly
+      - action: utter_bye_friendly
+
+  - story: Respond to bye formally
+    steps:
+      - intent: bye
+        conditions:
+          - slot: tone
+            value: formal
+      - action: utter_bye_formal
+
 
 # - story: happy path
 #   steps:
