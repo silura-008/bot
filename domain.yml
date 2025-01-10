@@ -191,7 +191,7 @@ responses:
     - text: "I'm so sorry you're feeling this way. You've been through so much, and it's okay to let yourself feel this sadness. Let's take this one step at a time, together."
     - text: "I know how hard this must be for you. You don't have to go through this alone—I'm here to listen, to support, and to help however I can."
     - text: "You've been through a lot, but it's just one part of your journey. You're not defined by it, and you don't have to face it alone."
-    - text: "It's tough to go through moments like these, but you've got this, even if it doesn't feel like it right now."
+     - text: "It understandable you are feeling sad, and it's okay to feel it.The more you face it the more stronger you become.So don't give up on yourself, becouse i don't."
 
   utter_elaborate_sad_fury:
     - text: "It seems like you're feeling sad right now. I know how difficult that can be. Would you like to share more about what's going on?"
@@ -236,10 +236,36 @@ responses:
     - text: "I hear your frustration, and it seems you getting angry often. Let's take one step at time and tame it."
     - text: "Anger can feel like it's taking control, but you should be the one in control not the anger. Let's figure out what can help you feel more in control."
 
+# anxious (elaborate/comfort)
+
+  utter_elaborate_anxious_joy:
+    - text: "You seem a little anxious. I know how overwhelming it can be to carry those feelings. Would you like to share what's been on your mind?"
+    - text: "I can sense unease in your words—it's okay to feel this way. Let's work together to ease it. What's been troubling you?"
+
+  utter_comfort_anxious_joy:
+    - text: "It's okay to feel anxious. I'm here to help you take it one step at a time—just know you're not alone in this."
+    - text: "Anxiety can feel heavy, but even small steps can make a big difference. Let's focus on what's within our control together."
+    - text: "Thank you for sharing your feelings. Anxiety is tough, but you don't have to go through it alone. Let's work through it together—I'm here for you."
+
+  utter_elaborate_anxious_sorrow/fury:
+    - text: "You seem anxious, and I know that can feel difficult to handle. Would you like to share more about what's been troubling you?"
+    - text: "I sense unease in your words. Let's take a moment to breathe—what's been on your mind lately?"
+
+  utter_comfort_anxious_sorrow/fury:
+    - text: "Anxiety can feel tough to manage, but you're stronger than you think. Let's take it one step at a time—I'm here to help."
+    - text: "It's okay to feel anxious, and I'm glad you shared this with me. Let's focus on what we can do together to ease those feelings."
+    - text: "Anxiety can feel overwhelming, but even small actions can help. Let's work through this together—you're not alone in this."
+
+  utter_elaborate_anxious_nervous:
+    - text: "You seem anxious again , what's going on"
+    - text: "I sense a lot of unease in your words. Let's work through it together—what's been on your mind?"
+
+  utter_comfort_anxious_nervous:
+    - text: "The frequent anxiety can be overwhelming, but you're it's not the end. Let's face it one step at a time."
+    - text: "It seems you are experiencing a lot of anxiety recently. don't panic , you got this. I'm here to help you focus on small steps toward calmness."
+    - text: "It understandable you are feeling anxious, and it's okay to feel it.The more you face it the more stronger you become.So don't give up on yourself, becouse i don't."
+
 # fear (elaborate/comfort)
-
-
-
 
 
 
