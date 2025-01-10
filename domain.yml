@@ -174,41 +174,77 @@ responses:
 # sad (elaborate/comfort)
 
   utter_elaborate_sad_joy:
-    - text: "I can see you’re feeling low. Even the bright sky have cloudy days. Would sharing your feelings help lighten the load?"
+    - text: "I can see you're feeling low. Even the bright sky have cloudy days. Would sharing your feelings help lighten the load?"
     - text: "You seem a bit down, which is okay—everyone has tough days, Do you feel like talking about it?"
 
   utter_comfort_sad_joy:
-    - text: "I’m sorry you’re feeling this way. Even the happiest people can feel sad sometimes—it’s completely okay. Remember, brighter days are ahead, and I’m here for you."
-    - text: "I know it’s tough right now, but your light hasn’t dimmed—you’re just in a moment of rest. It’s okay to take things slow, and I’m here if you want to talk."
-    - text: "Sadness can be a heavy emotion, but you’ve got such a resilient spirit. Lean into those feelings, and let’s work through this together."
-    - text: "It’s tough to go through moments like these, but you’ve got this, even if it doesn’t feel like it right now."
+    - text: "I'm sorry you're feeling this way. Even the happiest people can feel sad sometimes—it's completely okay. Remember, brighter days are ahead, and I'm here for you."
+    - text: "I know it's tough right now, but your light hasn't dimmed—you're just in a moment of rest. It's okay to take things slow, and I'm here if you want to talk."
+    - text: "Sadness can be a heavy emotion, but you've got such a resilient spirit. Lean into those feelings, and let's work through this together."
+    - text: "It's tough to go through moments like these, but you've got this, even if it doesn't feel like it right now."
 
   utter_elaborate_sad_sorrow:
-    - text: "You seem sad, and I know how hard it can be to navigate these feelings. Would you like to share more with me? I’m here for you."
-    - text: "I can feel the heaviness in your words. It’s okay to feel this way—talking might help lighten the load. What’s on your mind?"
+    - text: "You seem sad, and I know how hard it can be to navigate these feelings. Would you like to share more with me? I'm here for you."
+    - text: "I can feel the heaviness in your words. It's okay to feel this way—talking might help lighten the load. What's on your mind?"
 
   utter_comfort_sad_sorrow:
-    - text: "I’m so sorry you’re feeling this way. You’ve been through so much, and it’s okay to let yourself feel this sadness. Let’s take this one step at a time, together."
-    - text: "I know how hard this must be for you. You don’t have to go through this alone—I’m here to listen, to support, and to help however I can."
-    - text: "Sadness can feel all-encompassing, but it’s just one part of your journey. You’re not defined by it, and you don’t have to face it alone."
-    - text: "It’s tough to go through moments like these, but you’ve got this, even if it doesn’t feel like it right now."
+    - text: "I'm so sorry you're feeling this way. You've been through so much, and it's okay to let yourself feel this sadness. Let's take this one step at a time, together."
+    - text: "I know how hard this must be for you. You don't have to go through this alone—I'm here to listen, to support, and to help however I can."
+    - text: "You've been through a lot, but it's just one part of your journey. You're not defined by it, and you don't have to face it alone."
+    - text: "It's tough to go through moments like these, but you've got this, even if it doesn't feel like it right now."
 
   utter_elaborate_sad_fury:
-    - text: "It seems like you’re feeling sad right now. I know how difficult that can be. Would you like to share more about what’s going on?"
-    - text: "Sadness can feel heavy—it’s okay to feel this way. What’s been on your mind lately?"
+    - text: "It seems like you're feeling sad right now. I know how difficult that can be. Would you like to share more about what's going on?"
+    - text: "Sadness can feel heavy—it's okay to feel this way. What's been on your mind lately?"
 
   utter_elaborate_sad_nervous:
-    - text: "It sounds like you’re feeling sad. I’m here for you—would you like to share more about what’s going on?"
-    - text: "I can sense some sadness in your words. It’s okay to feel this way. Would talking about it help?"
-    - text: "It seems like something’s weighing on you. I’m here to listen—would you like to tell me more?"
+    - text: "It sounds like you're feeling sad. I'm here for you—would you like to share more about what's going on?"
+    - text: "I can sense some sadness in your words. It's okay to feel this way. Would talking about it help?"
+    - text: "It seems like something's weighing on you. I'm here to listen—would you like to tell me more?"
 
   utter_comfort_sad_fury/nervous:
-    - text: "It’s okay to feel sad, and I’m here to help you through it. Let’s take a moment to breathe and focus on what you need right now."
-    - text: "I hear your sadness, and it’s valid to feel this way. Let’s work through these feelings together—you’re not alone in this."
-    - text: "Sadness is tough, but you dont have to go through it alone. Let’s talk about how we can make this moment feel lighter."
+    - text: "It's okay to feel sad, and I'm here to help you through it. Let's take a moment to breathe and focus on what you need right now."
+    - text: "I hear your sadness, and it's valid to feel this way. Let's work through these feelings together—you're not alone in this."
+    - text: "Sadness is tough, but you dont have to go through it alone. Let's talk about how we can make this moment feel lighter."
+
+# angry (elaborate/comfort)
+
+  utter_elaborate_angry_joy:
+    - text: "It sounds like something has really upset you. Even someone as cheerful as you can feel anger—it's a natural reaction. Would you like to share what's going on?"
+    - text: "I sense frustration in your words. Anger can sometimes catch us by surprise, even on good days. Would talking about it help?"
+
+  utter_comfort_angry_joy:
+    - text: "I hear your frustration, and it's okay to feel this way. Anger is a sign that something matters deeply to you. Let's find a way to work through this together."
+    - text: "Even the happiest people have moments of anger—it's a natural and valid feeling. I'm here to help you channel this emotion into something constructive."
+    - text: "It's okay to feel angry. Let's take a moment to breathe and focus on what's within our control—you've got this."
+
+  utter_elaborate_angry_sorrow/nervous:
+    - text: "I sense anger in your words, and I know how hard it can be to deal with that. Would you like to talk about what's causing these feelings?"
+    - text: "It sounds like you're really upset. Anger can often stem from deeper feelings. I'm here to listen—what's been bothering you?"
+
+  utter_comfort_angry_sorrow/nervous:
+    - text: "Anger is a strong emotion, and it's completely valid to feel this way. Let's focus on finding a way to release it in a way that feels right for you."
+    - text: "It's okay to feel angry—it shows you care deeply about something. Let's channel this energy into something that helps you feel more at peace."
+    - text: "I hear you, and I can feel the frustration in your words. Let's take a moment to reflect on what might help ease this feeling."
+
+  utter_elaborate_angry_fury:
+    - text: "You seem angry again, Would you like to share more about what's been bothering you?"
+    - text: "I can sense the frustration in your words. Let's work together to understand what's causing it—what's on your mind?"
+
+  utter_comfort_angry_fury:
+    - text: "That must have been so hard to deal with.but you have deal with it ,without it consuming you. Let's find a way to channel it constructively and bring you some relief."
+    - text: "I hear your frustration, and it seems you getting angry often. Let's take one step at time and tame it."
+    - text: "Anger can feel like it's taking control, but you should be the one in control not the anger. Let's figure out what can help you feel more in control."
+
+# fear (elaborate/comfort)
 
 
 
+
+
+
+
+# extra
 
   utter_self_harm:  
     - text:  
@@ -254,15 +290,6 @@ responses:
 
   # utter_iamabot:
   # - text: "I am a bot, powered by Rasa."
-
-# angry (elaborate/comfort)
-
-
-
-
-
-
-
 
 slots:
   tone:
