@@ -267,7 +267,26 @@ responses:
 
 # fear (elaborate/comfort)
 
+  utter_elaborate_fear_sorrow/fury/nervous:
+    - text: "It sounds like you're feeling afraid. I know fear can feel overwhelming. Would you like to talk about what's been causing it?"
+    - text: "I sense some fear in your words. I understand that these feelings can be overwhelming. If you'd like, I'm here to listen to what's making you feel this way?"
+    - text: "Fear can be a strong and consuming emotion. I'm here for you—would you try talking about it to help ease the weight?"
 
+  utter_elaborate_fear_joy:
+    - text: "I sense some fear in your words. You are usually chill, what's going on?"
+    - text: "You seem worried. It's not like you, Want to share what's been making you feel this way?"
+
+  utter_comfort_fear_joy/fury:
+    - text: "Fear can feel overpowering, but It's okay , You got tis. Let's take this one step at a time—I'm here to help you."
+    - text: "It's okay to feel afraid, and I'm so glad you shared this with me. Together, we'll work through this and find a sense of calm."
+    - text: "Fear is a natural response, but it can be eased. Let's focus on grounding ourselves and finding a way forward—you've got this."
+
+  utter_comfort_fear_sorrow/nervous:
+    - text: "It's understandable that you feeling scared considering your circumstances. Don't worry , Let's try to take a deep breath and work through this together."
+    - text: "I know how much overwhelming this can be. You have been throgh a lot. Let's try to work through it together."
+    - text: "I hear you—it's not easy to going through this right now. But it's gonna be okay. I am with you."
+
+# else
 
 
 # extra
