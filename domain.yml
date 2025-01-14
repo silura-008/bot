@@ -134,12 +134,22 @@ responses:
 
 # happy (elaborate/comfort)
 
+  utter_elaborate_happy_new:
+    - text: "You seem happy—that's great. Want to tell me more about what's going on?"
+    - text: "You look happy! Would you like to tell me more about it?"
+    - text: "You sound happy, and that's so wonderful to hear! I'd love to know more."
+
+  utter_comfort_happy_new:
+    - text: "That's so nice to hear! I'm glad you're having such a good moment."
+    - text: "That sounds amazing! It's these are the moments that make life so special. I'm so happy for you!"
+    - text: "That sounds so wonderful! Moments like these are what make life truly beautiful. Savor it, and remember, happiness deserves to be celebrated."
+
   utter_elaborate_happy_joy:
     - text: "Sounds like something amazing happened. Care to tell me more?"
     - text: "It's so lovely to see your excitement. Would you like to tell me more about it?"
-    -  text: "You seem really happy! What's been going on?"
-    -  text: "That's wonderful to hear! What's been bringing you so much joy?"
-    -  text: "You seem happy—that's wonderful. Want to tell me more about what's going on?"
+    - text: "You seem really happy! What's been going on?"
+    - text: "That's wonderful to hear! What's been bringing you so much joy?"
+    - text: "You seem happy—that's wonderful. Want to tell me more about what's going on?"
 
   utter_comfort_happy_joy:
     - text: "That sounds so wonderful! Moments like these are what make life truly beautiful. Savor it, and remember, happiness deserves to be celebrated."
@@ -288,6 +298,7 @@ responses:
     - text: "I hear you—it's not easy to going through this right now. But it's gonna be okay. I am with you."
 
 # else
+
 
 
 # extra
