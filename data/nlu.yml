@@ -150,31 +150,31 @@ nlu:
 
 
 
-- intent: self_harm  
-  examples: |  
-    - I feel like hurting myself  
-    - I can't do this anymore  
-    - I don't want to live  
-    - I want to end it all  
-    - I hate myself so much  
-    - I feel worthless  
-    - I want to give up on everything  
-    - Nobody would miss me if I were gone  
-    - I don't think I can keep going  
-    - Life feels pointless
+# - intent: self_harm  
+#   examples: |  
+#     - I feel like hurting myself  
+#     - I can't do this anymore  
+#     - I don't want to live  
+#     - I want to end it all  
+#     - I hate myself so much  
+#     - I feel worthless  
+#     - I want to give up on everything  
+#     - Nobody would miss me if I were gone  
+#     - I don't think I can keep going  
+#     - Life feels pointless
 
-- intent: violence  
-  examples: |  
-    - I feel like breaking something  
-    - I'm so angry I could hurt someone  
-    - I want to scream at someone  
-    - I feel like hitting something  
-    - I can't control my anger  
-    - I hate everyone  
-    - I feel so aggressive right now  
-    - I want to hurt someone  
-    - I can't stop these violent thoughts  
-    - I feel like punching a wall
+# - intent: violence  
+#   examples: |  
+#     - I feel like breaking something  
+#     - I'm so angry I could hurt someone  
+#     - I want to scream at someone  
+#     - I feel like hitting something  
+#     - I can't control my anger  
+#     - I hate everyone  
+#     - I feel so aggressive right now  
+#     - I want to hurt someone  
+#     - I can't stop these violent thoughts  
+#     - I feel like punching a wall
 
 # - intent: affirm
 #   examples: |

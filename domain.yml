@@ -5,6 +5,7 @@ intents:
   - greet_formal
   - bye
   - thanks
+  - nlu_fallback
 #   - affirm
 #   - deny
 #   - mood_great
@@ -191,7 +192,7 @@ responses:
     - text: "I'm so sorry you're feeling this way. You've been through so much, and it's okay to let yourself feel this sadness. Let's take this one step at a time, together."
     - text: "I know how hard this must be for you. You don't have to go through this alone—I'm here to listen, to support, and to help however I can."
     - text: "You've been through a lot, but it's just one part of your journey. You're not defined by it, and you don't have to face it alone."
-     - text: "It understandable you are feeling sad, and it's okay to feel it.The more you face it the more stronger you become.So don't give up on yourself, becouse i don't."
+    - text: "It understandable you are feeling sad, and it's okay to feel it.The more you face it the more stronger you become.So don't give up on yourself, becouse i don't."
 
   utter_elaborate_sad_fury:
     - text: "It seems like you're feeling sad right now. I know how difficult that can be. Would you like to share more about what's going on?"
@@ -291,29 +292,29 @@ responses:
 
 # extra
 
-  utter_self_harm:  
-    - text:  
-        "I'm so sorry you're feeling this way. You're not alone, and there are people who care about you and want to help."  
-    - text:  
-        "It's okay to feel overwhelmed sometimes. Please know that hurting yourself won't solve the pain. Let's think about how we can get you support."  
-    - text:  
-        "I can only imagine how hard this must be for you. Please consider reaching out to a trusted friend, family member, or a mental health professional."  
-    - text:  
-        "Your feelings are valid, and I'm here to help you through this. Can I help you find someone to talk to, like a counselor or a support line?"  
-    - text:  
-        "I'm so sorry you're feeling this way. Please reach out to a mental health professional or a helpline—they can provide the care and support you deserve."
+  # utter_self_harm:  
+  #   - text:  
+  #       "I'm so sorry you're feeling this way. You're not alone, and there are people who care about you and want to help."  
+  #   - text:  
+  #       "It's okay to feel overwhelmed sometimes. Please know that hurting yourself won't solve the pain. Let's think about how we can get you support."  
+  #   - text:  
+  #       "I can only imagine how hard this must be for you. Please consider reaching out to a trusted friend, family member, or a mental health professional."  
+  #   - text:  
+  #       "Your feelings are valid, and I'm here to help you through this. Can I help you find someone to talk to, like a counselor or a support line?"  
+  #   - text:  
+  #       "I'm so sorry you're feeling this way. Please reach out to a mental health professional or a helpline—they can provide the care and support you deserve."
   
-  utter_violence:  
-    - text:  
-        "I can sense how strong your feelings are right now. It's okay to feel anger, but let's find a safe way to express it."  
-    - text:  
-        "I hear you—it's really tough to deal with such intense emotions. Try to pause and take a few deep breaths. You've got this."  
-    - text:  
-        "It's okay to feel angry, but hurting yourself or others won't solve the problem. Let's talk about what's bothering you and how we can manage it."  
-    - text:  
-        "I can tell you're feeling very upset. Would you like to try a calming exercise with me, like slow breathing or counting down?"  
-    - text:  
-        "Anger can feel overwhelming, but it's important to stay safe. Can I help you find someone to talk to, like a therapist or counselor?"
+  # # utter_violence:  
+  #   - text:  
+  #       "I can sense how strong your feelings are right now. It's okay to feel anger, but let's find a safe way to express it."  
+  #   - text:  
+  #       "I hear you—it's really tough to deal with such intense emotions. Try to pause and take a few deep breaths. You've got this."  
+  #   - text:  
+  #       "It's okay to feel angry, but hurting yourself or others won't solve the problem. Let's talk about what's bothering you and how we can manage it."  
+  #   - text:  
+  #       "I can tell you're feeling very upset. Would you like to try a calming exercise with me, like slow breathing or counting down?"  
+  #   - text:  
+  #       "Anger can feel overwhelming, but it's important to stay safe. Can I help you find someone to talk to, like a therapist or counselor?"
 
 
 
@@ -347,8 +348,44 @@ slots:
     initial_value: formal
     influence_conversation: true
 
+  personality:
+    type: categorical
+    values:
+        - new
+        - joy
+        - sorrow
+        - fury
+        - nervous
+    mappings:
+        - type: custom
+    initial_value: new
+    influence_conversation: true
+
+  emotion:
+    type: categorical
+    values:
+        - happy
+        - sad
+        - angry
+        - anxious
+        - fear
+    mappings:
+        - type: custom
+    influence_conversation: true
+
+  msg_type:
+    type: categorical
+    values:
+        - gibberish
+        - share_emotion
+        - elaborate_emotion
+    mappings:
+        - type: custom
+    influence_conversation: true
+
 actions:
     - action_set_tone
+    - action_handle_fallback
 
 session_config:
   session_expiration_time: 60

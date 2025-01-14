@@ -45,3 +45,38 @@ stories:
           - tone: formal
       - action: utter_bye_formal
 
+
+
+
+
+
+  - story: Sad path new
+    steps:
+      - intent: nlu_fallback
+      - action: action_handle_fallback
+      - slot_was_set:
+          - msg_type: share_emotion
+          - personality: new
+          - emotion: sad
+      - action: utter_elaborate_sad_nervous
+      - intent: nlu_fallback
+      - action: action_handle_fallback
+      - slot_was_set:
+          - msg_type: elaborate_emotion
+      - action: utter_comfort_sad_fury/nervous
+
+  - story: angry path new
+    steps:
+      - intent: nlu_fallback
+      - action: action_handle_fallback
+      - slot_was_set:
+          - msg_type: share_emotion
+          - personality: new
+          - emotion: angry
+      - action: utter_elaborate_angry_sorrow/nervous
+      - intent: nlu_fallback
+      - action: action_handle_fallback
+      - slot_was_set:
+          - msg_type: elaborate_emotion
+      - action: utter_comfort_angry_sorrow/nervous
+
