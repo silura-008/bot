@@ -37,7 +37,6 @@ nlu:
     - good morning  
     - good afternoon  
     - good evening  
-    - I hope you're doing well  
     - greetings  
     - good day  
     - hello, can we talk  
@@ -176,24 +175,34 @@ nlu:
 #     - I can't stop these violent thoughts  
 #     - I feel like punching a wall
 
-# - intent: affirm
-#   examples: |
-#     - yes
-#     - y
-#     - indeed
-#     - of course
-#     - that sounds good
-#     - correct
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - yep
+    - yeah
+    - ofcourse
+    - ofc
+    - ok
+    - okay
+    - no shit
+    - why not
+    - with pleasure
 
-# - intent: deny
-#   examples: |
-#     - no
-#     - n
-#     - never
-#     - I don't think so
-#     - don't like that
-#     - no way
-#     - not really
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - nah
+    - nop
 
 # - intent: mood_great
 #   examples: |
