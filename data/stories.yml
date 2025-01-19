@@ -50,7 +50,31 @@ stories:
 
 # new paths
 
-  - story: happy path new [affirm]
+  - story: happy path new / WRONG /
+    steps:
+      - intent: nlu_fallback
+      - action: action_handle_fallback
+      - slot_was_set:
+          - msg_type: share_emotion
+          - personality: new
+          - emotion: happy
+      - action: utter_elaborate_happy_new
+      - intent: wrong
+      - action: utter_wrong
+
+  - story: happy path new -- deny to elaborate --
+    steps:
+      - intent: nlu_fallback
+      - action: action_handle_fallback
+      - slot_was_set:
+          - msg_type: share_emotion
+          - personality: new
+          - emotion: happy
+      - action: utter_elaborate_happy_new
+      - intent: deny
+      - action: utter_deny_elaboration
+
+  - story: happy path new [ affirm coping ]
     steps:
       - intent: nlu_fallback
       - action: action_handle_fallback
@@ -68,7 +92,7 @@ stories:
       - intent: affirm
       - action: utter_help
 
-  - story: happy path new [deny]
+  - story: happy path new [ deny coping ]
     steps:
       - intent: nlu_fallback
       - action: action_handle_fallback
@@ -86,7 +110,31 @@ stories:
       - intent: deny
       - action: utter_deny_coping
 
-  - story: Sad path new [affirm]
+  - story: Sad path new / WRONG /
+    steps:
+      - intent: nlu_fallback
+      - action: action_handle_fallback
+      - slot_was_set:
+          - msg_type: share_emotion
+          - personality: new
+          - emotion: sad
+      - action: utter_elaborate_sad_nervous
+      - intent: wrong
+      - action: utter_wrong
+
+  - story: Sad path new -- deny to elaborate --
+    steps:
+      - intent: nlu_fallback
+      - action: action_handle_fallback
+      - slot_was_set:
+          - msg_type: share_emotion
+          - personality: new
+          - emotion: sad
+      - action: utter_elaborate_sad_nervous
+      - intent: deny
+      - action: utter_deny_elaboration
+
+  - story: Sad path new [ affirm coping ]
     steps:
       - intent: nlu_fallback
       - action: action_handle_fallback
@@ -104,7 +152,7 @@ stories:
       - intent: affirm
       - action: utter_help
 
-  - story: Sad path new [deny]
+  - story: Sad path new [ deny coping ]
     steps:
       - intent: nlu_fallback
       - action: action_handle_fallback
@@ -122,7 +170,31 @@ stories:
       - intent: deny
       - action: utter_deny_coping
 
-  - story: angry path new [affirm]
+  - story: angry path new / WRONG /
+    steps:
+      - intent: nlu_fallback
+      - action: action_handle_fallback
+      - slot_was_set:
+          - msg_type: share_emotion
+          - personality: new
+          - emotion: angry
+      - action: utter_elaborate_angry_sorrow/nervous
+      - intent: wrong
+      - action: utter_wrong
+
+  - story: angry path new -- deny to elaborate --
+    steps:
+      - intent: nlu_fallback
+      - action: action_handle_fallback
+      - slot_was_set:
+          - msg_type: share_emotion
+          - personality: new
+          - emotion: angry
+      - action: utter_elaborate_angry_sorrow/nervous
+      - intent: deny
+      - action: utter_deny_elaboration
+
+  - story: angry path new [ affirm coping ]
     steps:
       - intent: nlu_fallback
       - action: action_handle_fallback
@@ -140,7 +212,7 @@ stories:
       - intent: affirm
       - action: utter_help
 
-  - story: angry path new [deny]
+  - story: angry path new [ deny coping ]
     steps:
       - intent: nlu_fallback
       - action: action_handle_fallback
@@ -158,7 +230,31 @@ stories:
       - intent: deny
       - action: utter_deny_coping
 
-  - story: anxious path new [affirm]
+  - story: anxious path new / WRONG /
+    steps:
+      - intent: nlu_fallback
+      - action: action_handle_fallback
+      - slot_was_set:
+          - msg_type: share_emotion
+          - personality: new
+          - emotion: anxious
+      - action: utter_elaborate_anxious_joy
+      - intent: wrong
+      - action: utter_wrong
+
+  - story: anxious path new -- deny to elaborate --
+    steps:
+      - intent: nlu_fallback
+      - action: action_handle_fallback
+      - slot_was_set:
+          - msg_type: share_emotion
+          - personality: new
+          - emotion: anxious
+      - action: utter_elaborate_anxious_joy
+      - intent: deny
+      - action: utter_deny_elaboration
+
+  - story: anxious path new [ affirm coping ]
     steps:
       - intent: nlu_fallback
       - action: action_handle_fallback
@@ -176,7 +272,7 @@ stories:
       - intent: affirm
       - action: utter_help
 
-  - story: anxious path new [deny]
+  - story: anxious path new [ deny coping ]
     steps:
       - intent: nlu_fallback
       - action: action_handle_fallback
@@ -194,7 +290,31 @@ stories:
       - intent: deny
       - action: utter_deny_coping
 
-  - story: fear path new [affirm]
+  - story: fear path new / WRONG /
+    steps:
+      - intent: nlu_fallback
+      - action: action_handle_fallback
+      - slot_was_set:
+          - msg_type: share_emotion
+          - personality: new
+          - emotion: fear
+      - action: utter_elaborate_fear_sorrow/fury/nervous
+      - intent: wrong
+      - action: utter_wrong
+
+  - story: fear path new -- deny to elaborate --
+    steps:
+      - intent: nlu_fallback
+      - action: action_handle_fallback
+      - slot_was_set:
+          - msg_type: share_emotion
+          - personality: new
+          - emotion: fear
+      - action: utter_elaborate_fear_sorrow/fury/nervous
+      - intent: deny
+      - action: utter_deny_elaboration
+
+  - story: fear path new [ affirm coping ]
     steps:
       - intent: nlu_fallback
       - action: action_handle_fallback
@@ -212,7 +332,7 @@ stories:
       - intent: affirm
       - action: utter_help
 
-  - story: fear path new [deny]
+  - story: fear path new [ deny coping ]
     steps:
       - intent: nlu_fallback
       - action: action_handle_fallback
