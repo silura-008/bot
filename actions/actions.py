@@ -49,7 +49,7 @@
 
 from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
-from rasa_sdk.events import SlotSet
+from rasa_sdk.events import SlotSet, UserUtteranceReverted
 from rasa_sdk.executor import CollectingDispatcher
 
 class ActionSetTone(Action):
@@ -67,6 +67,21 @@ class ActionSetTone(Action):
             return [SlotSet("tone", "friendly")]
         elif intent == "greet_formal":
             return [SlotSet("tone", "formal")]
+        
+class ActionSetSuggestion(Action):
+   def name(self) -> Text:
+      return "action_set_suggestion"
+
+   def run(self,
+           dispatcher: CollectingDispatcher,
+           tracker: Tracker,
+           domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        intent = tracker.latest_message['intent']['name']
+        
+        suggestion= "need help?"
+
+        return [SlotSet("suggestion", suggestion)]
 
 class ActionHandleFallback(Action):
    def name(self) -> Text:
@@ -98,7 +113,9 @@ class ActionHandleFallback(Action):
                     ]
         else:
             dispatcher.utter_message(text="Sorry, I didn't understand that. Can you please clarify ")
-            return [SlotSet("msg_type", "gibberish")]
+            return [SlotSet("msg_type", "gibberish"),
+                    UserUtteranceReverted()
+                    ]
             
 
 

@@ -42,21 +42,14 @@ nlu:
     - hello, can we talk  
     - nice to meet you  
     - I'd like to speak with you  
-    - hello, are you available 
     - hi, I'd like some support  
     - may I speak with you?  
     - hi, I need assistance
-    - hello, I have a question
     - hi, I need help
     - hello, I'd like to talk
-    - hi, I need some information
     - hello, I have a problem
     - hi, I need some advice
-    - hello, I'd like to discuss
-    - hi, I need some guidance
-    - hello, I have a concern
-    - hello, I'd like to ask
-    - hi, I need some feedback  
+    - hello, I have a concern 
     - hello  
     - hi  
     - hey  
@@ -149,31 +142,34 @@ nlu:
 
 
 
-# - intent: self_harm  
-#   examples: |  
-#     - I feel like hurting myself  
-#     - I can't do this anymore  
-#     - I don't want to live  
-#     - I want to end it all  
-#     - I hate myself so much  
-#     - I feel worthless  
-#     - I want to give up on everything  
-#     - Nobody would miss me if I were gone  
-#     - I don't think I can keep going  
-#     - Life feels pointless
-
-# - intent: violence  
-#   examples: |  
-#     - I feel like breaking something  
-#     - I'm so angry I could hurt someone  
-#     - I want to scream at someone  
-#     - I feel like hitting something  
-#     - I can't control my anger  
-#     - I hate everyone  
-#     - I feel so aggressive right now  
-#     - I want to hurt someone  
-#     - I can't stop these violent thoughts  
-#     - I feel like punching a wall
+- intent: self_harm  
+  examples: |  
+    - I feel like hurting myself  
+    - I will kill my self
+    - I am going to die  
+    - I want to end my life  
+    - I hate myself so much  
+    - I will suicide  
+    - Nobody would miss me if I were gone  
+    - I don't think I can keep going  
+    - Life feels pointless
+    - I am at the end of my rope
+    - i will cut my vein
+- intent: violence  
+  examples: |  
+    - I feel like breaking something  
+    - I'm so angry I could hurt someone  
+    - I want to scream at someone  
+    - I feel like hitting something  
+    - I want to break something
+    - I want to hurt someone  
+    - I can't stop these violent thoughts  
+    - I feel like punching a wall
+    - I will kill him
+    - I am gonna hit him 
+    - i will stab her to death
+    - i will throw my mobile
+    - i want to cut her throat
 
 - intent: affirm
   examples: |

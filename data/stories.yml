@@ -50,7 +50,7 @@ stories:
 
 # new paths
 
-  - story: happy path new
+  - story: happy path new [affirm]
     steps:
       - intent: nlu_fallback
       - action: action_handle_fallback
@@ -63,9 +63,30 @@ stories:
       - action: action_handle_fallback
       - slot_was_set:
           - msg_type: elaborate_emotion
+      - action: action_set_suggestion
       - action: utter_comfort_happy_new
+      - intent: affirm
+      - action: utter_help
 
-  - story: Sad path new
+  - story: happy path new [deny]
+    steps:
+      - intent: nlu_fallback
+      - action: action_handle_fallback
+      - slot_was_set:
+          - msg_type: share_emotion
+          - personality: new
+          - emotion: happy
+      - action: utter_elaborate_happy_new
+      - intent: nlu_fallback
+      - action: action_handle_fallback
+      - slot_was_set:
+          - msg_type: elaborate_emotion
+      - action: action_set_suggestion
+      - action: utter_comfort_happy_new
+      - intent: deny
+      - action: utter_deny
+
+  - story: Sad path new [affirm]
     steps:
       - intent: nlu_fallback
       - action: action_handle_fallback
@@ -78,9 +99,30 @@ stories:
       - action: action_handle_fallback
       - slot_was_set:
           - msg_type: elaborate_emotion
+      - action: action_set_suggestion
       - action: utter_comfort_sad_fury/nervous
+      - intent: affirm
+      - action: utter_help
 
-  - story: angry path new
+  - story: Sad path new [deny]
+    steps:
+      - intent: nlu_fallback
+      - action: action_handle_fallback
+      - slot_was_set:
+          - msg_type: share_emotion
+          - personality: new
+          - emotion: sad
+      - action: utter_elaborate_sad_nervous
+      - intent: nlu_fallback
+      - action: action_handle_fallback
+      - slot_was_set:
+          - msg_type: elaborate_emotion
+      - action: action_set_suggestion
+      - action: utter_comfort_sad_fury/nervous
+      - intent: deny
+      - action: utter_deny
+
+  - story: angry path new [affirm]
     steps:
       - intent: nlu_fallback
       - action: action_handle_fallback
@@ -93,9 +135,30 @@ stories:
       - action: action_handle_fallback
       - slot_was_set:
           - msg_type: elaborate_emotion
+      - action: action_set_suggestion
       - action: utter_comfort_angry_sorrow/nervous
+      - intent: affirm
+      - action: utter_help
 
-  - story: anxious path new
+  - story: angry path new [deny]
+    steps:
+      - intent: nlu_fallback
+      - action: action_handle_fallback
+      - slot_was_set:
+          - msg_type: share_emotion
+          - personality: new
+          - emotion: angry
+      - action: utter_elaborate_angry_sorrow/nervous
+      - intent: nlu_fallback
+      - action: action_handle_fallback
+      - slot_was_set:
+          - msg_type: elaborate_emotion
+      - action: action_set_suggestion
+      - action: utter_comfort_angry_sorrow/nervous
+      - intent: deny
+      - action: utter_deny
+
+  - story: anxious path new [affirm]
     steps:
       - intent: nlu_fallback
       - action: action_handle_fallback
@@ -108,9 +171,30 @@ stories:
       - action: action_handle_fallback
       - slot_was_set:
           - msg_type: elaborate_emotion
+      - action: action_set_suggestion
       - action: utter_comfort_anxious_joy
+      - intent: affirm
+      - action: utter_help
 
-  - story: fear path new
+  - story: anxious path new [deny]
+    steps:
+      - intent: nlu_fallback
+      - action: action_handle_fallback
+      - slot_was_set:
+          - msg_type: share_emotion
+          - personality: new
+          - emotion: anxious
+      - action: utter_elaborate_anxious_joy
+      - intent: nlu_fallback
+      - action: action_handle_fallback
+      - slot_was_set:
+          - msg_type: elaborate_emotion
+      - action: action_set_suggestion
+      - action: utter_comfort_anxious_joy
+      - intent: deny
+      - action: utter_deny
+
+  - story: fear path new [affirm]
     steps:
       - intent: nlu_fallback
       - action: action_handle_fallback
@@ -123,7 +207,28 @@ stories:
       - action: action_handle_fallback
       - slot_was_set:
           - msg_type: elaborate_emotion
+      - action: action_set_suggestion
       - action: utter_comfort_fear_joy/fury
+      - intent: affirm
+      - action: utter_help
+
+  - story: fear path new [deny]
+    steps:
+      - intent: nlu_fallback
+      - action: action_handle_fallback
+      - slot_was_set:
+          - msg_type: share_emotion
+          - personality: new
+          - emotion: fear
+      - action: utter_elaborate_fear_sorrow/fury/nervous
+      - intent: nlu_fallback
+      - action: action_handle_fallback
+      - slot_was_set:
+          - msg_type: elaborate_emotion
+      - action: action_set_suggestion
+      - action: utter_comfort_fear_joy/fury
+      - intent: deny
+      - action: utter_deny
 
 # happy paths
 
@@ -140,7 +245,10 @@ stories:
       - action: action_handle_fallback
       - slot_was_set:
           - msg_type: elaborate_emotion
+      - action: action_set_suggestion
       - action: utter_comfort_happy_joy
+      - intent: affirm
+      - action: utter_help
 
   - story: happy path sorrow
     steps:
@@ -155,7 +263,10 @@ stories:
       - action: action_handle_fallback
       - slot_was_set:
           - msg_type: elaborate_emotion
+      - action: action_set_suggestion
       - action: utter_comfort_happy_sorrow
+      - intent: affirm
+      - action: utter_help
 
   - story: happy path fury
     steps:
@@ -170,7 +281,10 @@ stories:
       - action: action_handle_fallback
       - slot_was_set:
           - msg_type: elaborate_emotion
+      - action: action_set_suggestion
       - action: utter_comfort_happy_fury
+      - intent: affirm
+      - action: utter_help
 
   - story: happy path nervous
     steps:
@@ -185,7 +299,10 @@ stories:
       - action: action_handle_fallback
       - slot_was_set:
           - msg_type: elaborate_emotion
+      - action: action_set_suggestion
       - action: utter_comfort_happy_nervous
+      - intent: affirm
+      - action: utter_help
 
 # sad path
 
@@ -202,7 +319,10 @@ stories:
       - action: action_handle_fallback
       - slot_was_set:
           - msg_type: elaborate_emotion
+      - action: action_set_suggestion
       - action: utter_comfort_sad_joy
+      - intent: affirm
+      - action: utter_help
 
   - story: sad path sorrow
     steps:
@@ -217,7 +337,10 @@ stories:
       - action: action_handle_fallback
       - slot_was_set:
           - msg_type: elaborate_emotion
+      - action: action_set_suggestion
       - action: utter_comfort_sad_sorrow
+      - intent: affirm
+      - action: utter_help
 
   - story: sad path fury
     steps:
@@ -232,7 +355,10 @@ stories:
       - action: action_handle_fallback
       - slot_was_set:
           - msg_type: elaborate_emotion
+      - action: action_set_suggestion
       - action: utter_comfort_sad_fury/nervous
+      - intent: affirm
+      - action: utter_help
 
   - story: sad path nervous
     steps:
@@ -247,7 +373,10 @@ stories:
       - action: action_handle_fallback
       - slot_was_set:
           - msg_type: elaborate_emotion
+      - action: action_set_suggestion
       - action: utter_comfort_sad_fury/nervous
+      - intent: affirm
+      - action: utter_help
 
 # angry paths 
 
@@ -264,7 +393,10 @@ stories:
       - action: action_handle_fallback
       - slot_was_set:
           - msg_type: elaborate_emotion
+      - action: action_set_suggestion
       - action: utter_comfort_angry_joy
+      - intent: affirm
+      - action: utter_help
 
   - story: angry path sorrow and nervous
     steps:
@@ -283,7 +415,10 @@ stories:
       - action: action_handle_fallback
       - slot_was_set:
           - msg_type: elaborate_emotion
+      - action: action_set_suggestion
       - action: utter_comfort_angry_sorrow/nervous
+      - intent: affirm
+      - action: utter_help
 
   - story: angry path fury
     steps:
@@ -298,7 +433,10 @@ stories:
       - action: action_handle_fallback
       - slot_was_set:
           - msg_type: elaborate_emotion
+      - action: action_set_suggestion
       - action: utter_comfort_angry_fury
+      - intent: affirm
+      - action: utter_help
 
 # anxious paths
 
@@ -315,7 +453,10 @@ stories:
       - action: action_handle_fallback
       - slot_was_set:
           - msg_type: elaborate_emotion
+      - action: action_set_suggestion
       - action: utter_comfort_anxious_joy
+      - intent: affirm
+      - action: utter_help
 
   - story: anxious path sorrow and fury
     steps:
@@ -334,7 +475,10 @@ stories:
       - action: action_handle_fallback
       - slot_was_set:
           - msg_type: elaborate_emotion
+      - action: action_set_suggestion
       - action: utter_comfort_anxious_sorrow/fury
+      - intent: affirm
+      - action: utter_help
 
   - story: anxious path nervous
     steps:
@@ -349,7 +493,10 @@ stories:
       - action: action_handle_fallback
       - slot_was_set:
           - msg_type: elaborate_emotion
+      - action: action_set_suggestion
       - action: utter_comfort_anxious_nervous
+      - intent: affirm
+      - action: utter_help
 
 # fear paths
 
@@ -366,7 +513,10 @@ stories:
       - action: action_handle_fallback
       - slot_was_set:
           - msg_type: elaborate_emotion
+      - action: action_set_suggestion
       - action: utter_comfort_fear_joy/fury
+      - intent: affirm
+      - action: utter_help
 
   - story: fear path sorrow and nervous
     steps:
@@ -385,7 +535,10 @@ stories:
       - action: action_handle_fallback
       - slot_was_set:
           - msg_type: elaborate_emotion
+      - action: action_set_suggestion
       - action: utter_comfort_fear_sorrow/nervous
+      - intent: affirm
+      - action: utter_help
 
   - story: fear path fury
     steps:
@@ -400,7 +553,10 @@ stories:
       - action: action_handle_fallback
       - slot_was_set:
           - msg_type: elaborate_emotion
+      - action: action_set_suggestion
       - action: utter_comfort_fear_joy/fury
+      - intent: affirm
+      - action: utter_help
 
 # else
 
