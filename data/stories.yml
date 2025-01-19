@@ -84,7 +84,7 @@ stories:
       - action: action_set_suggestion
       - action: utter_comfort_happy_new
       - intent: deny
-      - action: utter_deny
+      - action: utter_deny_coping
 
   - story: Sad path new [affirm]
     steps:
@@ -120,7 +120,7 @@ stories:
       - action: action_set_suggestion
       - action: utter_comfort_sad_fury/nervous
       - intent: deny
-      - action: utter_deny
+      - action: utter_deny_coping
 
   - story: angry path new [affirm]
     steps:
@@ -156,7 +156,7 @@ stories:
       - action: action_set_suggestion
       - action: utter_comfort_angry_sorrow/nervous
       - intent: deny
-      - action: utter_deny
+      - action: utter_deny_coping
 
   - story: anxious path new [affirm]
     steps:
@@ -192,7 +192,7 @@ stories:
       - action: action_set_suggestion
       - action: utter_comfort_anxious_joy
       - intent: deny
-      - action: utter_deny
+      - action: utter_deny_coping
 
   - story: fear path new [affirm]
     steps:
@@ -228,7 +228,7 @@ stories:
       - action: action_set_suggestion
       - action: utter_comfort_fear_joy/fury
       - intent: deny
-      - action: utter_deny
+      - action: utter_deny_coping
 
 # happy paths
 
