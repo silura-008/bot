@@ -1,5 +1,5 @@
 .rasa 
 rasa/
 .rasa/
-models/
+# models/
 story_graph.dot

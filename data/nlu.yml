@@ -200,6 +200,11 @@ nlu:
     - nah
     - nop
 
+- intent: wrong
+  examples: |
+    - wrong
+    - false
+
 # - intent: mood_great
 #   examples: |
 #     - perfect
