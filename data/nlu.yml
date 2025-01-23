@@ -138,11 +138,6 @@ nlu:
 
 
 
-
-
-
-
-
 - intent: self_harm  
   examples: |  
     - I will suicide  
@@ -250,7 +245,7 @@ nlu:
     - nah
     - nop
 
-- intent: misunderstood
+- intent: wrong
   examples: |
     - wrong
     - false
