@@ -142,34 +142,84 @@ nlu:
 
 
 
+
 - intent: self_harm  
   examples: |  
-    - I feel like hurting myself  
-    - I will kill my self
-    - I am going to die  
-    - I want to end my life  
-    - I hate myself so much  
     - I will suicide  
-    - Nobody would miss me if I were gone  
-    - I don't think I can keep going  
-    - Life feels pointless
-    - I am at the end of my rope
-    - i will cut my vein
+    - Nobody would miss me if I were gone   
+    -m everyone I feel like hurting myself  
+    - I want to hurt myself  
+    - I feel like ending my life  
+    - I will kill myself  
+    - I want to commit suicide  
+    - I feel like slitting my wrists  
+    - I want to cut my veins  
+    - I want to disappear forever  
+    - I feel like overdosing  
+    - I have thoughts of suicide  
+    - I hate myself so much I want to end it  
+    - I don't see a way out anymore  
+    - I want to escape everything forever  
+    - I want to escape fro    - I can't stop these violent thoughts  
+    - I want to jump off a building  
+    - I'm done with life  
+    - I feel like drowning myself  
+    - I don't want to exist anymore  
+    - I am thinking about harming myself  
+    - I just want to go away forever  
+    - Life is too painful, I want to end it  
+    - I'm thinking of taking my life  
+    - I want to end it all  
+    - I feel like taking pills and ending it  
+    - I'm feeling like slitting my throat  
+    - I want to kill myself today  
+    - I feel like stabbing myself  
+    - I want to jump off a bridge  
+    - Life has no point, I want to end it  
+    - I'm planning to hurt myself tonight  
+    - I have a blade and I can't stop thinking  
+    - I'm scared I might hurt myself  
+    - I feel like hurting my body to stop the pain  
+    - I want to punish myself physically  
+    - I can't go on like this, I need to end it  
+
 - intent: violence  
   examples: |  
-    - I feel like breaking something  
-    - I'm so angry I could hurt someone  
-    - I want to scream at someone  
-    - I feel like hitting something  
-    - I want to break something
-    - I want to hurt someone  
     - I can't stop these violent thoughts  
-    - I feel like punching a wall
-    - I will kill him
-    - I am gonna hit him 
-    - i will stab her to death
-    - i will throw my mobile
     - i want to cut her throat
+    - I feel like breaking something  
+    - I want to smash everything in my way 
+    - I feel like hitting someone right now  
+    - I want to hurt someone  
+    - I want to kill him  
+    - I will stab him  
+    - I'm thinking of stabbing someone  
+    - I will throw this chair  
+    - I feel like throwing things around  
+    - I want to destroy something  
+    - I can't stop thinking about hitting her  
+    - I'm furious, I want to break a window  
+    - I want to beat someone up  
+    - I'm thinking of cutting someone with a knife  
+    - I feel like choking him  
+    - I want to strangle her  
+    - I feel like smashing plates  
+    - I feel like punching a wall until it cracks  
+    - I'm about to lose control and hurt him  
+    - I want to cause harm to someone who hurt me  
+    - I want to rip things apart  
+    - I want to break someone's arm  
+    - I'm so mad I want to scream and smash things   
+    - I'm going to hit him, I can't stop myself  
+    - I'm feeling violent and can't hold it back  
+    - I want to crush his face  
+    - I'm thinking of kicking someone  
+    - I will kill her for what she did   
+    - I can't control these violent thoughts  
+    - I'm imagining hurting him badly  
+    - I want to shatter this glass right now  
+    - I want to stab her in the back
+
 
 - intent: affirm
   examples: |

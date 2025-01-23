@@ -1,6 +1,15 @@
 version: "3.1"
 
 rules:
+  - rule: Respond to self-harm 
+    steps:
+      - intent: self_harm
+      - action: utter_self_harm
+    
+  - rule: Respond to violence 
+    steps:
+      - intent: violence
+      - action: utter_violence
 
 # - rule: Say goodbye anytime the user says goodbye
 #   steps:

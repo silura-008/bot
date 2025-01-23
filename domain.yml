@@ -431,6 +431,15 @@ responses:
     - text: 
         "I understand. Let me know if there's anything else you'd like to talk about."
 
+  utter_self_harm:
+    - text: "I'm so sorry you're feeling this way. Your well-being is very important. Please, consider reaching out to a trusted friend, family member, or a mental health professional immediately."
+    - text: "I know things may feel overwhelming, but there are people who care about you and want to help. Please, talk to someone you trust or contact a helpline."
+    - text: "You don't have to go through this alone. Speaking with a professional can help. Please consider seeking support from a counselor or a doctor."
+
+  utter_violence:
+    - text: "I understand you're feeling this way, but violence won't help. Can we talk about what's upsetting you and find a healthier way to handle it?"
+    - text: "I hear your frustration, but it's important to stay calm. Let's focus on finding a solution that doesn't involve hurting anyone or yourself."
+    - text: "I know you're feeling angry, but take a moment to breathe deeply. Talking about what's bothering you can help you gain control over these feelings."
 
 
 
