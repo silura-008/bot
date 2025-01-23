@@ -250,10 +250,43 @@ nlu:
     - nah
     - nop
 
-- intent: wrong
+- intent: misunderstood
   examples: |
     - wrong
     - false
+    - that's not what I meant
+    - you misunderstood me
+    - that's not correct
+    - that's wrong
+    - you're wrong
+    - you got it wrong
+    - I didn't mean that
+    - that's not the answer I was looking for
+    - that's not right
+    - incorrect
+    - you're not understanding me
+    - this is not what I meant
+    - wrong response
+    - you didn't understand me
+    - not what I expected
+    - that's not accurate
+    - wrong interpretation
+    - you're not getting it
+    - this is incorrect
+    - you didn't get it
+    - that's way off
+    - not even close
+    - no, not even close
+    - you're mistaken
+    - nope, wrong again
+    - sorry, that's not it
+    - not at all what I meant
+    - you missed my point
+    - that's a misunderstanding
+    - this is not what I was saying
+
+
+
 
 # - intent: mood_great
 #   examples: |
