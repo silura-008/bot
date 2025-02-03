@@ -31,3 +31,18 @@ pipeline:
   - name: FallbackClassifier
     threshold: 0.5
     ambiguity_threshold: 0.1
+
+    pipeline:
+  - name: WhitespaceTokenizer
+    case_sensitive: False
+  - name: LanguageModelFeaturizer
+    model_name: "bert"
+    model_weights: "bert-base-uncased"
+  - name: DIETClassifier
+    epochs: 100
+  - name: custom_components.custom_bert_classifier.EmotionClassificationComponent
+  - name: EntitySynonymMapper
+  - name: ResponseSelector
+    epochs: 100
+  - name: FallbackClassifier
+    threshold: 0.4
