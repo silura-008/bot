@@ -46,3 +46,63 @@ pipeline:
     epochs: 100
   - name: FallbackClassifier
     threshold: 0.4
+
+
+########
+
+from typing import Dict, Text, Any, List
+
+from rasa.engine.graph import GraphComponent, ExecutionContext
+from rasa.engine.recipes.default_recipe import DefaultV1Recipe
+from rasa.engine.storage.resource import Resource
+from rasa.engine.storage.storage import ModelStorage
+from rasa.shared.nlu.training_data.message import Message
+from rasa.shared.nlu.training_data.training_data import TrainingData
+
+from transformers import pipeline
+
+@DefaultV1Recipe.register(
+    [DefaultV1Recipe.ComponentType.INTENT_CLASSIFIER], is_trainable=False
+)
+class EmotionClassifier(GraphComponent):
+    @classmethod
+    def create(
+        cls,
+        config: Dict[Text, Any],
+        model_storage: ModelStorage,
+        resource: Resource,
+        execution_context: ExecutionContext,
+    ) -> GraphComponent:
+        model_name = config.get("model_name", "SamLowe/roberta-base-go_emotions")
+        return cls(model_name)
+
+    def __init__(self, model_name: Text) -> None:
+        self.model_name = model_name
+        self.model = pipeline(task="text-classification", model=model_name, top_k=None)
+
+    def process(self, messages: List[Message]) -> List[Message]:
+        """Predicts multiple emotion labels and selects the most confident one as intent."""
+        for message in messages:
+            try:
+                model_outputs = self.model([message.text])[0]  # Get predictions
+                if model_outputs:
+                    # Select the label with the highest confidence
+                    top_label = max(model_outputs, key=lambda x: x["score"])
+                    
+                    # Store intent as the most confident label
+                    message.set("intent", {
+                        "name": top_label["label"],
+                        "confidence": top_label["score"]
+                    })
+                    
+                    # Optionally store all label scores as metadata
+                    message.set("metadata", {"all_intent_scores": model_outputs})
+
+                else:
+                    message.set("intent", {"name": "n/a", "confidence": 0.0})
+
+            except Exception as e:
+                message.set("intent", {"name": "n/a", "confidence": 0.0})
+                print(f"Error processing message '{message.text}': {str(e)}")
+
+        return messages
